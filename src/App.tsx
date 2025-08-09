@@ -1,10 +1,8 @@
-// StackBlitz React 예시
-import React, { useState } from 'react';
-import './style.css'; // 필요에 따라 CSS 파일을 추가하세요.
+import { useState } from 'react'; 
+import './style.css'; 
 
-// 여기에 Supabase URL과 anon key를 붙여넣으세요!
-const supabaseUrl = 'https://tbxoriibpmslifckxzwd.supabase.co';
-const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRieG9yaWlicG1zbGlmY2t4endkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ3NTE0OTMsImV4cCI6MjA3MDMyNzQ5M30.4gwjKaDLb54PbtrbvjQugBFU4CgZqg5IoGBJqR9uPSc';
+const supabaseUrl = 'YOUR_SUPABASE_URL';
+const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
 
 function App() {
   const [drama, setDrama] = useState('');
@@ -12,7 +10,7 @@ function App() {
   const [result, setResult] = useState('');
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = async (e) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setLoading(true);
     setResult('');
@@ -71,6 +69,10 @@ function App() {
         </div>
       )}
     </div>
+  );
+}
+
+export default App;
   );
 }
 
