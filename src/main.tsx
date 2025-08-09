@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import App from './App.tsx'; // App.jsx 파일을 import
+import App from './App.tsx'; 
 import './index.css';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App /> {/* App 컴포넌트를 렌더링 */}
+    <App />
   </React.StrictMode>,
 );
