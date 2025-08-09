@@ -1,8 +1,8 @@
 import { useState } from 'react'; 
 import './style.css'; 
 
-const supabaseUrl = 'YOUR_SUPABASE_URL';
-const supabaseKey = 'YOUR_SUPABASE_ANON_KEY';
+const supabaseUrl = 'https://tbxoriibpmslifckxzwd.supabase.co';
+const supabaseKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRieG9yaWlicG1zbGlmY2t4endkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTQ3NTE0OTMsImV4cCI6MjA3MDMyNzQ5M30.4gwjKaDLb54PbtrbvjQugBFU4CgZqg5IoGBJqR9uPSc';
 
 function App() {
   const [drama, setDrama] = useState('');
